@@ -1,9 +1,4 @@
-# eray
-eray is a JavaScript library for event emitter.
-
-## Examples
-```js
-import { SoloEmitter, Emitter } from 'eray';
+const { SoloEmitter, Emitter } = require('../dist/eray')
 
 // SoloEmitter is used for single event emitter
 let soloEmitter = SoloEmitter.of()
@@ -58,20 +53,3 @@ emitter.emit('y', [7, 8])
 emitter.off('y', listener)
 emitter.emit('y', [7, 8])
 //=> no listener no output
-
-```
-
-## Installation
-
-```
-npm install --save eray
-```
-
-## Usage
-You can import one or multiple collections from `eray`:
-
-```js
-import { SoloEmitter, Emitter } from 'eray';
-// or
-const { SoloEmitter, Emitter } = require('eray');
-```
